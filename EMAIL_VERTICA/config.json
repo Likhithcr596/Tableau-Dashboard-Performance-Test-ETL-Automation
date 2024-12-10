@@ -7,12 +7,12 @@
         "database": "testdb"
     },
     "smtp": {
-        "sender_email": "pradeeptest.gultest@glassbeam.com",
+        "sender_email": "likhithtest.gultest@glassbeam.com",
         "smtp_username": "AKIA34YW7TtestXU52",
         "smtp_password": "BM8jOSPHHWD+L9MSSxsXIlcdtstW4qK6x8TEST",
         "smtp_server": "email-test.us-east-1.amazonaws.com",
         "smtp_port": 465,
-        "recipient_emails": ["pradeeptest.gultest@glassbeam.com"]
+        "recipient_emails": ["likhithtest.gultest@glassbeam.com"]
     },
     "s3": {
         "bucket_name": "gb-tabjolt-logs",

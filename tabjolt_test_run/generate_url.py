@@ -5,7 +5,7 @@ import xml.etree.ElementTree as ET
 SERVER_URL = "https://gbprodwb.glassbeam.com"
 API_VERSION = "3.10"
 USERNAME = "administrator"
-PASSWORD = "gla55beam"
+PASSWORD = "password"
 SITE_NAME = "nypnypprod"
 
 # Common headers

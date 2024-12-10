@@ -107,7 +107,7 @@ def create_average_time_graph(conn_info):
 
                     plt.tight_layout()
 
-                    graph_path = '/ebs/pradeep/tabjolt/genral/average_time_graph.png'
+                    graph_path = '/ebs/likhith/tabjolt/genral/average_time_graph.png'
                     plt.savefig(graph_path)
                     plt.close()
                     
@@ -349,20 +349,20 @@ if __name__ == "__main__":
     s3_config = config['s3']
 
     files_to_download = [
-        ('wincounter.tsv', '/ebs/pradeep/tabjolt/genral/wincounter.tsv'),
-        ('summary_line.csv', '/ebs/pradeep/tabjolt/genral/summary_line.csv'),
-        ('thread_details.csv', '/ebs/pradeep/tabjolt/genral/thread_details.csv'),
-        ('modified_workbook.csv', '/ebs/pradeep/tabjolt/genral/modified_workbook.csv')
+        ('wincounter.tsv', '/ebs/likhith/tabjolt/genral/wincounter.tsv'),
+        ('summary_line.csv', '/ebs/likhith/tabjolt/genral/summary_line.csv'),
+        ('thread_details.csv', '/ebs/likhith/tabjolt/genral/thread_details.csv'),
+        ('modified_workbook.csv', '/ebs/likhith/tabjolt/genral/modified_workbook.csv')
     ]
 
     for s3_key, local_path in files_to_download:
         download_from_s3(s3_config['bucket_name'], s3_config['folder_path'],s3_key, local_path, s3_config['aws_access_key_id'], s3_config['aws_secret_access_key'], s3_config['region_name'])
 
     files_to_load = [
-        ('/ebs/pradeep/tabjolt/genral/wincounter.tsv', 'tabjolt.wincounter', '\t'),
-        ('/ebs/pradeep/tabjolt/genral/summary_line.csv', 'tabjolt.summary_line', ','),
-        ('/ebs/pradeep/tabjolt/genral/thread_details.csv', 'tabjolt.thread_details', '\t'),
-        ('/ebs/pradeep/tabjolt/genral/modified_workbook.csv', 'tabjolt.performance_samples', ',')
+        ('/ebs/likhith/tabjolt/genral/wincounter.tsv', 'tabjolt.wincounter', '\t'),
+        ('/ebs/likhith/tabjolt/genral/summary_line.csv', 'tabjolt.summary_line', ','),
+        ('/ebs/likhith/tabjolt/genral/thread_details.csv', 'tabjolt.thread_details', '\t'),
+        ('/ebs/likhith/tabjolt/genral/modified_workbook.csv', 'tabjolt.performance_samples', ',')
     ]
 
     for file_path, table_name, delimiter in files_to_load:
@@ -392,6 +392,8 @@ if __name__ == "__main__":
 
     if query_results and graph_path:
         send_email_with_graph("Tabjolt Daily Run Summary for site genral on gbprodwb.glassbeam.com", query_results, graph_path, performance_samples_query, performance_samples_avg,performance_less_avg,vertica_config, smtp_config)
+
+
 
 
 
