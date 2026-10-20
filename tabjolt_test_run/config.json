@@ -7,8 +7,8 @@
     "vizpool_target_directory": "C:\\Tabjolt__bmi\\config",
     "s3_bucket": "gb-tabjolt-logs",
     "folder_name":"BMI",
-    "aws_access_key_id": "AKIAYIKTESTTB6SF2SZ",
-    "aws_secret_access_key": "8LtwFkSlhGiXIxtestpj34QgwTMP/Tko+81w+9lr",
+    "aws_access_key_id": "acces-key",
+    "aws_secret_access_key": "secret-key",
     "aws_region": "us-east-1"
   }
   
