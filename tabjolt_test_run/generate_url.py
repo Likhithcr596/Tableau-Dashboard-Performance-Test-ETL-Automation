@@ -1,4 +1,3 @@
-```python
 import requests
 import xml.etree.ElementTree as ET
 
@@ -204,4 +203,3 @@ if __name__ == "__main__":
 
     except (ET.ParseError, ValueError) as e:
         print(f"Failed to process Tableau response: {e}")
-```
