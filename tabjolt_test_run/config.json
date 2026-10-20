@@ -1,22 +1,13 @@
 {
-    "command": ["RunTabjolt.bat", "--t=testplans\\InteractVizLoadTest.jmx", "--d=60", "--c=5"],
-    "directory": "C:\\Tabjolt__bmi",
-    "results_directory": "C:\\Tabjolt__bmi\\results",
-    "target_directory": "C:\\Tabjolt_python_scripts\\tabjolt_repo_bmi",
-    "vizpool_source_file": "C:\\Tabjolt_python_scripts\\tabjolt_repo_bmi\\vizpool.csv",
-    "vizpool_target_directory": "C:\\Tabjolt__bmi\\config",
-    "s3_bucket": "gb-tabjolt-logs",
-    "folder_name":"BMI",
-    "aws_access_key_id": "acces-key",
-    "aws_secret_access_key": "secret-key",
-    "aws_region": "us-east-1"
-  }
-  
-
-
-
-
-
-
-
-  
+    "command": "python demo_test.py",
+    "directory": "./demo_project",
+    "results_directory": "./demo_project/results",
+    "target_directory": "./demo_project/output",
+    "vizpool_source_file": "./demo_project/vizpool.csv",
+    "vizpool_target_directory": "./demo_project/output",
+    "s3_bucket": "dummy-demo-bucket",
+    "folder_name": "sample-results",
+    "aws_access_key_id": "DUMMY_AWS_ACCESS_KEY_ID",
+    "aws_secret_access_key": "DUMMY_AWS_SECRET_ACCESS_KEY",
+    "region_name": "us-east-1"
+}
